@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 5px: ;
+}
+.logo{
+	cursor: pointer;
+}
+.logo:hover{
+	scale: 1.1;
+}
+.contact{
+	width: 40%;
+	border-left: 3px solid black;
+  height: 100px;
+  padding: 10px 0px 0px 30px;
+  cursor: pointer;
+}
+.contact button:hover{
+	transition: 0.1s;
+	border-radius: 50%;
+	scale: 1.2;
+}
+.regd{
+	color: #989d9e;
+}
+.call{
+	color: #33070e;
+}
+.call img{
+	vertical-align: middle;
+}
+.contact p{
+	margin-bottom: 5px;
+	text-decoration: none;
+	text-align:left;
+	font-size: 20px;
+}
+.contact a{
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+.logo{
+	width: 60%;
+	display: flex;
+	padding:10px 0px 0px 80px;
+}
+.menu{
+	padding: 0px 20px;
+	background: #00468C;
+}
+.menu ul{
+display: flex;
+justify-content: space-between;
+list-style: none;
+}
+.menu a{
+	color: white;
+	text-decoration: none;
+	text-transform: capitalize;
+	display: block;
+	font-size: 16px;
+	padding: 10px 15px;
+	white-space: nowrap;
+}
+.menu ul li a:hover{
+	border-radius: 20%;
+}
+.menu li{
+	text-align: center;
+	position: relative;
+	margin-left: 10px;
+	z-index: 5;
+}
+.menu a:hover, .menu a:focus{
+	background: red;
+}
+.menu .sub1{
+	flex-direction: column;
+	position: absolute;
+	background: #00468C;
+	top:100%;
+	left: 0%;
+	min-width: 100%;
+	justify-content: center;
+	display: none;
+}
+
+.sub1 li{
+	width: 100%;
+	margin: 0;
+	text-align: left;
+	margin-left: 0;
+}
+.menu li:hover .sub1{
+	display: table;
+}
+.menu .sub2{
+	display: table;
+	position: absolute;
+	background: #203f64;
+	top: 0;
+	left: 120%;
+	justify-content: center;
+	visibility: hidden;
+	transition: 0.5s;
+}
+.sub1 li:hover .sub2{
+	visibility: visible;
+	left: 100%;
+}
+.Himalaya{
+	min-height: 85vh;
+	background: url(mountain.png) no-repeat center;
+	background-size: cover;
+	align-items: center;
+	position: relative;
+}
+.mid-content{
+	position: absolute;
+	text-align: center;
+	top: 20%;
+	left: 0;
+	width: 100%;
+}
+.Himalaya mark{
+	font-size: 35px;
+	background-color: white;
+}
+.mid-content input{
+	display: inline-block;
+}
+.search{
+	border: 20px solid black;
+	border-radius: 25%;
+	background: #D2DFA8;
+	display: inline-block;
+}
+.specialized{
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	justify-content: center;
+}
+.trekking{
+	width: 100%;
+	padding:0px 50px 0px 50px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.trekking img{
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.trekking p{
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 10%;
+	align-items: center;
+	cursor: pointer;
+	width: 15%;
+}
+.trekking p:hover{
+	background: lightblue;
+	scale: 1.2;
+}

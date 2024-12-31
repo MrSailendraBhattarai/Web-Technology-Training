@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS INTRODUCTION</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1>SYNTAX</h1>
+
+	<pre class="internal">
+		css-property-name: value;
+	</pre>
+
+	<h1>1. Inline Style</h1>
+
+	<p style="color:white;font-size:20px;font-weight:bold;line-height:1.6em;background:black;padding:10px 10px 10px 10px;text-align:justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<!-- em => multiple of element font size -->
+	<!-- rem => multiple of default font size -->
+
+
+	<h3>Merits</h3>
+	<p>Quick to write</p>
+	<p>Quick to load</p>
+	<p>Easy to test</p>
+
+	<h3>Demerits</h3>
+	<p>Clumsy looks</p>
+	<p>Not reusable</p>
+	<p>Time consuming</p>
+	<p>Negative SERP ranking</p>
+
+
+	<h1>2. Internal Style</h1>
+
+	<p name="internal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p class="internal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<p id="internal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<h3>Naming Convention</h3>
+	<p>Naming attribute can be either of name, class or id.</p>
+	<p>Name must not start with a number</p>
+	<p>Name must not have a space in between</p>
+	<p>Relevent naming is a good way of naming elements</p>
+	<p>While joining two words either snakecase, camelcase, underscore or hyphen can be used.</p>
+
+	<p class="internal">W3C => world wide web consortium restricts the use of same id multiple times within a page.</p>
+
+	<h3>Merit</h3>
+	<p>Quick to load</p>
+	<p>Partly Reusable</p>
+
+	<h3>Demerits</h3>
+	<p>Partly reusable</p>
+
+
+	<h1 class="external">3. External Style</h1>
+
+	<h1>CSS => CASCADING STYLE SHEET</h1>
+
+<style>
+	[name="internal"]{
+		color:white;
+		font-size:20px;
+		font-weight:bold;
+		line-height:1.6em;
+		background:black;
+		padding:10px 10px 10px 10px;
+		text-align:justify;
+	}
+	.internal{
+		color:white;
+		font-size:20px;
+		font-weight:bold;
+		line-height:1.6em;
+		background:black;
+		padding:10px 10px 10px 10px;
+		text-align:justify;
+	}
+	#internal{
+		color:white;
+		font-size:20px;
+		font-weight:bold;
+		line-height:1.6em;
+		background:black;
+		padding:10px 10px 10px 10px;
+		text-align:justify;
+	}
+</style>
+</body>
+</html>

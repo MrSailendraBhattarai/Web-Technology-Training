@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS MENU</title>
+</head>
+<body>
+
+	<div class="menu1">
+		<ul>
+			<li><a href="#" class="active">home</a></li>
+			<li><a href="#">about us</a></li>
+			<li><a href="#">services &#9660;</a>
+				<ul class="sub1">
+					<li><a href="#">service 1</a></li>
+					<li><a href="#">service 2</a></li>
+					<li><a href="#">service 3 &#9656;</a>
+						<ul class="sub2">
+							<li><a href="#">service 3.1</a></li>
+							<li><a href="#">service 3.2</a></li>
+							<li><a href="#">service 3.3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">gallery</a></li>
+			<li><a href="#">blog</a></li>
+			<li><a href="#">portfolio</a></li>
+			<li><a href="#">contact us</a></li>
+		</ul>
+	</div>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.menu1{
+			padding: 10px 100px;
+			background: #203f64;
+			
+		}
+		.menu1 ul{
+			display: flex;
+			justify-content: flex-end;
+			list-style: none;
+		}
+		.menu1 li{
+			position: relative;
+			margin-left: 10px;
+			z-index: 5;
+		}
+		.menu1 a{
+			color: #fff;
+			text-decoration: none;
+			text-transform: capitalize;
+			padding: 10px 30px;			
+			display: block;
+		}
+		.active{
+			background: #0e1f33;
+		}
+		.menu1 a:hover, .menu1 a:focus{
+			background: #0e1f33;
+		}
+		.menu1 .sub1{
+			flex-direction: column;
+			position: absolute;
+			background: #203f64;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			justify-content: center;
+			display: none;
+		}
+		.sub1 li{
+			margin: 0;
+			text-align: center;
+		}
+		.sub1 a{
+			padding: 10px;
+		}
+		.menu1 li:hover .sub1{
+			display: block;
+		}
+		/*.menu1 a:hover ~ .sub1{
+			display: block;
+		}*/
+		.menu1 .sub2{
+			flex-direction: column;
+			position: absolute;
+			background: #203f64;
+			top: 0;
+			left: 120%;
+			width: 100%;
+			justify-content: center;
+			visibility: hidden;
+			transition: 0.5s;
+		}
+		.sub1 li:hover .sub2{
+			visibility: visible;
+			left: 100%;
+		}
+	</style>
+
+
+	<h1>WHITE HOUSE <span class="visibility">INTERNATIONAL</span> COLLEGE</h1>
+	<h1>WHITE HOUSE <span class="display">INTERNATIONAL</span> COLLEGE</h1>
+
+	<style>
+		.visibility{
+			visibility: hidden;
+		}
+		.display{
+			display: none;
+		}
+	</style>
+
+
+	<ul class="megamenu">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">Trekking </a>
+			<div class="megasub">
+				<ul>
+					<li><a href="#">Annapurna Region</a></li>
+					<li><a href="#">Mardi Himal Trek</a></li>
+					<li><a href="#">Annapurna Base Camp Trek</a></li>
+					<li><a href="#">Annapurna Circuit Trek</a></li>
+					<li><a href="#">Annapurna Panorama Trek</a></li>
+					<li><a href="#">Poon Hill Sunrise Trek</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Annapurna Sanctuary Trek</a></li>
+					<li><a href="#">Nar Phu Valley Trek</a></li>
+					<li><a href="#">Poon Hill Trek</a></li>
+					<li><a href="#">Annapurna Sunrise Trek</a></li>
+					<li><a href="#">Ghorepani Poon Hill Trek</a></li>
+				</ul>
+				<ul>	
+					<li><a href="#">Ghorepani Ghandruk Loop Trek</a></li>
+					<li><a href="#">4 Days Poon Hill Trek</a></li>
+					<li><a href="#">Annapurna Short Trek</a></li>
+					<li><a href="#">Poon Hill Annapurna Base Camp Trek</a></li>
+					<li><a href="#">Poon Hill Trekking Package</a></li>
+				</ul>
+				<ul>	
+					<li><a href="#">Short Mardi Himal Trek</a></li>
+					<li><a href="#">5 Days Annapurna Base Camp Trek</a></li>
+					<li><a href="#">6 Days Annapurna Base Camp Trek</a></li>
+					<li><a href="#">10 Days Poon Hill Annapurna Base Camp Trek</a></li>
+				</ul>
+			</div>
+		</li>
+		<li><a href="#">Nepal Tour </a></li>
+		<li><a href="#">Peak Climbing </a></li>
+		<li><a href="#">Easy Trek </a>
+			<div class="megasub">
+				<ul>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+				</ul>
+				<ul>	
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+				</ul>
+				<ul>	
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+					<li><a href="#">Easy Trek Link</a></li>
+				</ul>
+			</div>
+		</li>
+		<li><a href="#">Day Tour </a></li>
+		<li><a href="#">Bhutan </a></li>
+		<li><a href="#">Tibet </a></li>
+		<li><a href="#">Blogs</a></li>
+		<li><a href="#">Contact Us		</a></li>
+	</ul>
+
+	<style>
+		.megamenu{
+			background: #203f64;
+			display: flex;
+			padding: 10px 100px;
+			justify-content: flex-end;
+			margin: 30px 0;
+			list-style: none;
+			position: relative;
+			z-index: 4;
+		}
+		.megamenu a{
+			color: #fff;
+			text-decoration: none;
+			text-transform: capitalize;
+			padding: 10px 30px;			
+			display: block;
+		}
+		.megamenu a:hover, .megamenu a:focus{
+			color: rgba(255,255,255,0.6);
+		}
+		.megasub{
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 100px;
+			position: absolute;
+			top: 120%;
+			left: 0;
+			background: #203f64;
+			width: 100%;
+			visibility: hidden;
+			transition: 0.5s;
+		}
+		.megasub ul{
+			list-style: none;
+		}
+		.megamenu li:hover .megasub{
+			visibility: visible;
+			top: 100%;
+		}
+	</style>
+
+
+	<ul class="vertical">
+		<li><a href="#">Women's Fashion <span class="arrow">&#9656;</span></a>
+			<ul class="vsub">
+				<li><a href="#">Clothing<span class="arrow">&#9656;</span></a></li>
+				<li><a href="#">Traditional Clothing<span class="arrow">&#9656;</span></a>
+					<ul class="vsub1">
+						<li><a href="#">Saree</a></li>
+						<li><a href="#">Kurtas </a></li>
+						<li><a href="#">Kurtis </a></li>
+						<li><a href="#">Lehenga </a></li>
+						<li><a href="#">Unstitched Fabric </a></li>
+						<li><a href="#">Dupattas, Stoles & Shawls</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Women's Bags<span class="arrow">&#9656;</span></a></li>
+				<li><a href="#">Shoes<span class="arrow">&#9656;</span></a></li>
+				<li><a href="#">Accessories<span class="arrow">&#9656;</span></a></li>
+				<li><a href="#">Lingerie, Sleep & Lounge<span class="arrow">&#9656;</span></a></li>
+				<li><a href="#">Girl's Fashion<span class="arrow">&#9656;</span></a></li>
+			</ul>
+		</li>
+		<li><a href="#">Health & Beauty <span class="arrow">&#9656;</span></a></li>
+		<li><a href="#">Men's Fashion <span class="arrow">&#9656;</span></a></li>
+		<li><a href="#">Watches & Accessories <span class="arrow">&#9656;</span></a></li>
+		<li><a href="#">Electronic Devices <span class="arrow">&#9656;</span></a></li>
+		<li><a href="#">TV & Home Appliances <span class="arrow">&#9656;</span></a></li>
+		<li><a href="#">Electronic Accessories <span class="arrow">&#9656;</span></a></li>
+		<li><a href="#">Groceries & Pets <span class="arrow">&#9656;</span></a></li>
+		<li><a href="#">Babies & Toys <span class="arrow">&#9656;</span></a></li>
+		<li><a href="#">Home & Lifestyle <span class="arrow">&#9656;</span></a>
+			<ul class="vsub">
+				<li><a href="#">Bath<span class="arrow">&#9656;</span></a></li>
+				<li><a href="#">Bedding<span class="arrow">&#9656;</span></a></li>
+				<li><a href="#">Decor<span class="arrow">&#9656;</span></a></li>
+				<li><a href="#">Furniture<span class="arrow">&#9656;</span></a></li>
+				<li><a href="#">Kitchen & Dining<span class="arrow">&#9656;</span></a></li>
+				<li><a href="#">Lighting<span class="arrow">&#9656;</span></a></li>
+				<li><a href="#">Musical Instruments<span class="arrow">&#9656;</span></a>
+					<ul class="vsub1">
+						<li><a href="#">Bass Guitars</a></li>
+						<li><a href="#">Drums & Percussion </a></li>
+						<li><a href="#">Keyboards & Pianos </a></li>
+						<li><a href="#">Guitar & Bass Accessories</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li> 	
+		<li><a href="#">Sports & Outdoor <span class="arrow">&#9656;</span></a></li>
+		<li><a href="#">Motors, Tools & DIY <span class="arrow">&#9656;</span></a></li>		
+	</ul>
+
+	<style>
+		.vertical{
+			width: 200px;
+			background: #f7f7f7;
+			box-shadow: 0 0 5px #d7d7d7;
+			position: relative;
+		}
+		.vertical a{
+			display: block;
+			padding: 5px 10px;
+			text-decoration: none;
+			text-transform: capitalize;
+			color: #343a40;
+		}
+		.arrow{
+			display: inline-block;
+			float: right;
+			color: orange;
+			visibility: hidden;
+		}
+		.vertical a:hover .arrow{
+			visibility: visible;
+		}
+		.vertical a:hover{
+			color: orange;
+		}
+		.vsub,.vsub1{
+			position: absolute;
+			left: 110%;
+			top: 0;
+			list-style: none;
+			width: 100%;
+			height: 100%;
+			background: #f7f7f7;
+			box-shadow: 0 0 5px #d7d7d7;
+			visibility: hidden;
+			transition: 0.5s;
+		}
+		.vertical li:hover .vsub{
+			visibility: visible;
+			left: 100%;
+		}
+		.vsub li:hover .vsub1{
+			visibility: visible;
+			left: 100%;
+		}
+	</style>
+
+</body>
+</html>

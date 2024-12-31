@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS IMAGES</title>
+</head>
+<body>
+
+	<div class="image-sprite">
+		<a href="#facebook" class="social fb"></a>
+		<a href="#twitter" class="social tw"></a>
+		<a href="#instagram" class="social in"></a>
+		<a href="#linkedin" class="social li"></a>
+		<a href="#viber" class="social vi"></a>
+		<a href="#tiktok" class="social tk"></a>
+	</div>
+
+	<style>
+		.image-sprite{
+			position: fixed;
+			right: 0;
+			top: 150px;
+			width: 50px;
+			z-index: 5;
+		}
+		.social{
+			background:url(social.jpg);
+			display: block;
+			width: 50px;
+			height: 50px;
+			margin-bottom: 5px;
+		}
+		.fb{
+			background-position: -63px 0;
+		}
+		.li{
+			background-position: -126px 0;
+		}
+		.in{
+			background-position: -3px -127px;
+		}
+		.vi{
+			background-position: 176px -190px;
+		}
+		.tk{
+			background-position: 52px 53px;
+		}
+	</style>
+
+	<div class="text-over-image">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<style>
+		*{
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.text-over-image{
+			background: url(nature4.avif) no-repeat center;
+			/*background-repeat: no-repeat;
+			background-position: center;*/
+			padding: 100px;
+			background-size: cover;
+			position: relative;
+			color: #fff;
+		}
+		.text-over-image:after{
+			position: absolute;
+			content: '';
+			width: 100%;
+			height: 100%;
+			background:rgba(0,0,0,0.3);
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		.text-over-image h1, .text-over-image p{
+			position: relative;
+			z-index: 2;
+		}
+	</style>
+
+	<h1 class="title">CSS POSITIONS</h1>
+
+	<div class="sticky">
+		<h1>Sticky Position</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<style>
+		.sticky{
+			position: sticky;
+			background:#fff;
+			padding: 20px 100px;
+			top: 0;
+			z-index: 3;
+		}
+	</style>
+
+	<style type="text/css">
+		.title{
+			position: relative;
+			text-align: center;
+			text-transform: uppercase;
+			margin: 50px 0;
+		}
+		.title:after{
+			content: '';
+			position: absolute;
+			width: 100px;
+			background:#000;
+			height: 3px;
+			top: 120%;
+			/*left: 50%;*/
+			left:calc(50% - 50px);
+		}
+		.title:before{
+			content: '';
+			position: absolute;
+			width: 100px;
+			background:#000;
+			height: 3px;
+			top: 140%;
+			/*left: 50%;*/
+			left:calc(50% - 50px);
+		}
+	</style>
+
+	<h2>1. Static</h2>
+	<p>Default position of elements that doesn't affect other elements positioning.</p>
+
+	<h2>Relative</h2>
+	<p>provides base for absolute child elements to position themselves.</p>
+
+	<div class="relative">
+		<h1>Hello Relatives</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<h1 class="absolute">Absolute Title</h1>
+	</div>
+
+	<div class="py-5">
+		<h1>Hello Paddings</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="py-5">
+		<h1>Hello Paddings</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="absolute-elements">
+		<h1 class="absolute">Absolute Element</h1>
+		<p>Absolute elements can be positioned in relation to their parent elements position, if their parent element has position relative defined. Else, they will be positioned in relation to the body element.</p>
+	</div>
+
+	<style>
+		.relative{
+			position: relative;
+			background: red;
+			padding: 100px;
+		}
+		.absolute{
+			position: absolute;
+			right: 0;
+			top: 0;
+			color: #fff
+		}
+		.py-5{
+			padding: 100px;
+		}
+		.relative .absolute{
+			color: #333;
+		}
+	</style>
+
+
+	<div class="fixed">
+		<h1>Fixed Element</h1>
+	</div>
+
+	<style>
+		.fixed{
+			position: fixed;
+			top: 150px;
+			left: 0;
+			z-index: 4;
+			background-color: red;
+			width: 100%;
+			padding: 10px 100px;
+		}
+	</style>
+
+	<div class="py-5">
+		<h1>Hello Paddings</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="py-5">
+		<h1>Hello Paddings</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>	
+
+	<!-- forms and table stylings -->
+	<!-- menu stylings -->
+	<!-- animation and transition -->
+	<!-- combinators -->
+	<!-- layout options -->
+	<!-- media query -->
+
+
+</body>
+</html>

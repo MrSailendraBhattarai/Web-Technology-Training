@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML LINKS</title>
+</head>
+<body>
+
+	<!-- text => headings / paragraph / bold / italicize / underline -->
+	<!-- image => define file path / insert image / insert icon -->
+	<!-- link => define internal and external links -->
+	<!--  -->
+
+	<h1>HTML LINKS</h1>
+
+	<p><b>Syntax : &lt;a href="" &gt;&lt;/a&gt;</b></p>
+
+	<p>a => anchor / handle</p>
+
+	<h2>INTERNAL LINKS => ONE PAGE TO ANOTHER WITHIN SAME WEBSITE</h2>
+
+	<p>Note: Use relative path to define url of the page</p>
+
+	<a href="test.html">
+		GO TO TEST PAGE
+	</a>
+
+	<br>
+
+	<a href="test/another.html">
+		GO TO ANOTHER TEST PAGE
+	</a>
+
+
+	<h2>EXTERNAL LINKS => ONE WEBSITE TO ANOTHER</h2>
+
+	<p>Note: Use absolute url for external web pages</p>
+
+	<a href="http://google.com"><img src="Flag_of_Nepal.gif" width="50"></a>
+
+	https://www.google.com/
+
+	<h2>HTTP VS HTTPS</h2>
+
+	<p>Any website that has server layer security (SSL) is termed as https.</p>
+	<p>=> Form data are encrypted when transferring from origin to server.</p>
+	<p>if you try to connect any website without ssl with https, privacy error message will be displayed on the screen. But, if you try to connect any website with https via http only, you'll be redirected to https by default.</p>
+
+	<p>So, the safest approach would be to try connecting via http in case you don't know if it has https or not.</p>
+
+	<!-- https://webtrickshome.com/ -->
+
+	<h1>WWW VS NON WWW</h1>
+
+	<p>If any website is programmed to load using www, you can still access it via non www url and the server itself will redirect it to www or vice versa</p>
+
+	<h2>LINK FARMING</h2>
+
+	<p>Amount of External Links to any website defines its popularity, trustworthiness and shows the quality of the contents within it are very high.</p>
+
+	<p>Links from higher authority (popular) sites to relatively less popular sites will increase the popularity of lesser known sites</p>
+
+	<p>Links from lesser known sites to popular sites have no influence on popularity of popular sites.</p>
+
+	<p>External links must always be placed cautiously on your web pages.</p>
+
+	<h2>Always use rel="nofollow" along with your external links.</h2>
+
+	<a href="https://webtrickshome.com" target="_blank" rel="nofollow">Visit Webtrickshome</a>
+
+	<p>Use target="_blank" to open links in new tab</p>
+
+
+	<h1>LISTS</h1>
+
+	<p>1 hello</p>
+	<p>2 hello</p>
+	<p>3 hello</p>
+	<p>4 hello</p>
+	<p>5 hello</p>
+	<p>6 hello</p>
+
+	<p>HTML lists markup will be much more convenient rather than manually listing elements</p>
+
+	<h2>ORDERED LIST</h2>
+
+	<p>Any list that has numbering order. That can be one of the following. 1 (default), a, i, A, I</p>
+
+	<ol>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ol>
+
+	<p>Use type attribute to define if you want any of the options for numbering except number itself.</p>
+
+	<ol type="a">
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ol>
+
+	<ol type="i">
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ol>
+
+	<ol type="A">
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ol>
+
+	<ol type="I">
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ol>
+
+
+	<h2>UNORDERED LIST</h2>
+
+	<p>Unorderd list will display bullets before the list item. Variations can be circle, square or disc (default)</p>
+
+	<ul>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ul>
+
+	<ul type="square">
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ul>
+
+	<ul type="circle">
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ul>
+
+	<h1>NESTED LIST</h1>
+
+	<p>List inside list is called nested list</p>
+
+	<ol>
+		<li>list item</li>
+		<li>list item</li>
+		<li>
+			list item
+			<ol type="a">
+				<li>sub item</li>
+				<li>sub item</li>
+				<li>sub item</li>
+				<li>
+					sub item
+					<ol type="i">
+						<li>sub item 2</li>
+						<li>sub item 2</li>
+						<li>sub item 2</li>
+						<li>sub item 2</li>
+					</ol>
+				</li>
+				<li>sub item</li>
+				<li>sub item</li>
+			</ol>
+		</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+		<li>list item</li>
+	</ol>
+
+	<p>Note: inner ol/ul must start and end within the li within which it is supposed to be displayed.</p>
+
+	<p>Each list must start with li and end with li tag.</p>
+
+	<h1>YOUTUBE VIDEO</h1>
+
+	<!-- <iframe width="914" height="514" src="https://www.youtube.com/embed/MkcfB7S4fq0" title="How to Start Web Development? Complete Roadmap for FullStack Developer | 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+	<h1>GOOGLE MAP</h1>
+
+	<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28260.4725426708!2d85.28249037431638!3d27.700019800000018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198c3396ccc9%3A0x9f8d87aa236a99bf!2sHimalayan%20WhiteHouse%20International%20College%2C%20Putalisadak!5e0!3m2!1sne!2snp!4v1703478672836!5m2!1sne!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+</body>
+</html>

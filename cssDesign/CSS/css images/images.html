@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS IMAGES</title>
+</head>
+<body>
+
+	<div class="row">
+		<div class="col radius">
+			<img src="nature1.webp">
+		</div>
+		<div class="col oval">
+			<img src="nature2.jpeg">
+		</div>
+		<div class="col filter">
+			<img src="nature3.jpg">
+		</div>
+		<div class="col">
+			<img src="nature4.avif">
+		</div>
+		<div class="col">
+			<img src="nature5.jpeg">
+		</div>
+		<div class="col">
+			<img src="nature1.webp">
+		</div>
+	</div>
+
+
+	<div class="product">
+		<img src="nature1.webp" width="100%">
+		<span class="offer">20% Off</span>
+		<h3><a href="#">Product Title</a></h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
+		<div class="flex">
+			<span>NPR 2000</span>
+			<a href="#">Buy Now</a>
+		</div>
+	</div>
+
+	<style>
+		.product{
+			width: 22%;
+			margin: 30px auto;
+			padding: 10px;
+			box-shadow: 0 0 5px #d7d7d7;
+			position: relative;
+		}
+		.product a{
+			color: #343a40;
+			text-decoration: none;
+		}
+		.flex{
+			display: flex;
+			justify-content: space-between;
+			margin-top: 10px;
+		}
+		.flex *{
+			padding: 5px 15px;
+			background: #069;
+			color: #fff;
+			display: inline-block;
+		}
+		.flex a{
+			color: #fff;
+		}
+		.offer{
+			background: #f00;
+			color: #fff;
+			padding: 5px 15px;
+			position: absolute;
+			left: 10px;
+			top: 10px;
+		}
+	</style>
+
+
+	<!-- static, fixed, sticky -->
+
+
+	<div class="container">
+		<p><img src="sample.jpeg"></p>
+		<p><img src="banner1.jpg"></p>
+	</div>
+
+	<div class="holder">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+
+	<div class="holder banner text-white">
+		<div class="bg-layer">
+			<h1>Hello World!</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+	<div class="holder">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+
+	<div class="holder banner fixed">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="holder">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+
+	<div class="holder banner">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+
+	<style>
+		*{
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.holder{
+/*			width: 80%;*/
+/*			margin: 0 auto 30px;*/
+			padding: 100px;
+/*			background: linear-gradient(red,green);*/
+/*			background: radial-gradient(red,green);*/
+/*			background: conic-gradient(red,green);*/
+			background:red;
+			/* default			*/
+			background: linear-gradient(to bottom right, red,green);
+			background: -webkit-linear-gradient(to bottom right, red,green);
+			/*	for safari		*/
+			background: -moz-linear-gradient(to bottom right, red,green);
+			/*	for mozilla firefox		*/
+		}
+		.banner{
+			background-image: url(banner1.jpg);
+		}
+		.fixed{
+			background-attachment: fixed;
+			/* parallax			*/
+			position: relative;
+			color: #fff;
+		}
+		.fixed:after{
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: rgba(0, 0, 0, 0.5);
+			left: 0;
+			top: 0;
+			z-index: 1;
+		}
+		.fixed *{
+			position: relative;
+			z-index: 2;
+		}
+		.text-white{
+			color: #fff;
+/*			text-shadow: 1px 1px 1px #000;*/
+			padding: 0;
+		}
+		.bg-layer{
+			background: rgba(0,0,0,0.5);
+			padding: 100px;
+/*			opacity: 0.2;*/
+		}
+		.row{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		.col{
+			width: 31%;
+			margin-bottom: 30px;
+		}
+		.col img{
+			width: 100%;
+			height: 250px;
+			object-fit: cover;
+		}
+		.container img{
+			max-width: 100%;
+		}
+		.radius img{
+/*			border-radius: 10px 50px 100px 150px;*/
+/*			border-radius: 10px 50px 100px;*/
+/*			border-radius: 10px 100px;*/
+			border-radius: 30px;
+		}
+		.oval img{
+			border-radius: 50%;
+		}
+		.filter img{
+/*			filter: blur(2px);*/
+			filter: brightness(5.0);
+		}
+	</style>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+}
+.brinjal{
+	background-color: #390b66;
+}
+.Find{
+	padding: 50px;
+	color: #e6b010;
+}
+.cource{
+	padding-top: 30px;
+	font-size: 25px;
+	font-style: ;
+	color: white;
+	text-decoration: underline;
+	 text-underline-offset: 50px;
+/*	 text-underline-color: #e6b010;*/
+	text-decoration-color:#e6b010 ;
+}
+.picture{
+	display: flex;
+	padding: 50px 100px;
+	justify-content: space-between;
+}
+.box{
+	width: 33%;
+	margin-left: 60px;
+	color:#e6b010;
+	background-color: #501c80;
+	padding: 20px;
+}
+.box a{
+	display: inline-block;
+	text-decoration: none;
+	background: #a89220;
+	color: #000;
+	padding: 10px 15px;
+}
+.text{
+	color: #dbdad3;
+	font-style: italic;
+	padding-top: 15px;
+}
+.design{
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.design a{
+	color: #b3971b;
+}

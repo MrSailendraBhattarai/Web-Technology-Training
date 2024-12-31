@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS ANIMATION | TRANSITION AND TRANSFORMATION</title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+</head>
+<body>
+
+	<h1>Assignment : https://new.adventurehimalayacircuit.com/</h1>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+	</style>
+
+	<div class="container color">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<style>
+		.color{
+			transition: 5s;
+		}
+		.color:hover{
+			color: red;
+			font-size: 18px;
+		}
+	</style>
+
+	<div class="container padding">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<style>
+		.padding{
+			transition: 0.3s;
+		}
+		.padding:hover{
+			padding-left: 30px;
+		}
+	</style>
+
+	<div class="container size">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<style>
+		.size{
+			transition: 3s;
+		}
+		.size:hover{
+			width: 90%;
+		}
+	</style>
+
+	<div class="container">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="background"></div>
+
+	<style>
+		.background{
+			width: 100px;
+			height: 100px;
+			background: #000;
+			transition: 0.5s;
+			margin: auto;
+		}
+		.background:hover{
+			/*width: 200px;
+			height: 200px;*/
+			transform: scale(1.5);
+		}
+	</style>
+
+	<div class="flex">
+		<div class="product zoom">
+			<div class="product-img">
+				<img src="laptop.webp" width="100%">
+			</div>
+			<h3>HP Victus 15</h3>
+			<div class="price-section">
+				<span>USD 500</span>
+				<a href="#">Buy Now</a>
+			</div>
+		</div>
+		<div class="product move">
+			<div class="product-img">
+				<img src="laptop.webp" width="100%">
+			</div>
+			<h3>HP Victus 15</h3>
+			<div class="price-section hide">
+				<span>USD 500</span>
+				<a href="#">Buy Now</a>
+			</div>
+		</div>
+		<div class="product rotate">
+			<div class="product-img">
+				<img src="laptop.webp" width="100%">
+			</div>
+			<h3>HP Victus 15</h3>
+			<div class="price-section">
+				<span>USD 500</span>
+				<a href="#">Buy Now</a>
+			</div>
+		</div>
+		<div class="product skew">
+			<div class="product-img">
+				<img src="laptop.webp" width="100%">
+			</div>
+			<h3>HP Victus 15</h3>
+			<div class="price-section">
+				<span>USD 500</span>
+				<a href="#">Buy Now</a>
+			</div>
+		</div>
+		<div class="product matrix">
+			<div class="product-img">
+				<img src="laptop.webp" width="100%">
+			</div>
+			<h3>HP Victus 15</h3>
+			<div class="price-section">
+				<span>USD 500</span>
+				<a href="#">Buy Now</a>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		.flex{
+			width: 80%;
+			display: flex;
+			margin: 50px auto;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		.product{
+			box-shadow: 0 0 5px #ccc;
+			width: 30%;
+			padding: 10px;
+			margin-bottom: 30px;
+		}
+		.product img{
+			transition: 0.3s;
+		}
+		.product-img{
+			overflow: hidden;
+		}
+		.zoom:hover img{
+			transform: scale(1.2);
+		} 
+		.price-section{
+			display: flex;
+			justify-content: space-between;
+		}
+		.price-section *{
+			display: inline-block;
+			padding: 5px 15px;
+			background: #222;
+			color: #fff;
+			text-decoration: none;
+		}
+		.price-section *:hover{
+			background: #666;
+			box-shadow: 0 0 5px #999;
+		}
+		.move{
+			transition: 0.3s;
+			overflow: hidden;
+			position: relative;
+		}
+		.move:hover{
+			/*transform: translate(20px);*/
+			/*transform: translate(20px, 50px);*/
+			/*transform: translateX(20px);*/
+			transform: translateY(-50px);
+		}
+		.hide{
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 100%;
+			transition: 0.5s;
+			padding: 0 10px;
+		}
+		.move:hover .hide{
+			top: 89%;
+		}
+		.rotate:hover img{
+			transform: rotate(360deg);
+		}
+		.skew:hover img{
+			transform: skewX(-10deg);
+		}
+		.matrix:hover img{
+			/*scalex, skewY, skewX, scaleY, transaleX, tramslateY */
+			transform: matrix(1.2,0.3,0.3,1.2,10,10);
+		}
+	</style>
+
+	<div class="container">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="container">
+		<h1>Hello World!</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<style>
+		.container{
+			width: 80%;
+			margin: 0 auto 30px;
+		}
+	</style>
+
+	<div class="boxa"></div>
+
+	<style>
+		.boxa{
+			width: 100px;
+			height: 100px;
+			background: red;
+			/*animation-name: birkhe;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;*/
+			/*animation: birkhe 3s infinite;*/
+			animation: rubberBand 5s 1;
+			animation-delay: 10s;
+		}
+		@keyframes birkhe{
+			0%{background: red}
+			25%{background: blue}
+			50%{background: green}
+			75%{background: pink}
+		}
+	</style>
+
+<!-- » Create Shapes Using Css
+» CSS Layout - Float, Table, Flex
+» CSS Combinators
+» CSS Pseudo-Classes And Pseudo-Elements
+» CSS Variables
+» CSS Media Queries
+ -->
+
+</body>
+</html>

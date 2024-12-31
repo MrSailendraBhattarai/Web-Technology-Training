@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS SHAPES | Combinators | Pseudo-Elements | Attribute Selectors | Variables</title>
+</head>
+<body>
+
+	<h1>circle, rectangle, square, oval</h1>
+
+	<div class="circle"></div>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.circle{
+			width: 100px;
+			height: 100px;
+			background: red;
+			border-radius: 50%;
+		}
+	</style>
+
+	<div class="oval"></div>
+
+	<style>
+		.oval{
+			width: 200px;
+			height: 100px;
+			background: red;
+			border-radius: 50%;
+		}
+	</style>
+
+	<div class="pills"></div>
+
+	<style>
+		.pills{
+			width: 100px;
+			height: 40px;
+			background: red;
+			border-radius: 20px;
+		}
+	</style>
+	<div class="rectangle"></div>
+
+	<style>
+		.rectangle{
+			width: 200px;
+			height: 100px;
+			background: red;
+		}
+	</style>
+
+	<div class="square"></div>
+
+	<style>
+		.square{
+			width: 200px;
+			height: 200px;
+			background: red;
+		}
+	</style>
+
+	<div class="radius"></div>
+
+	<style>
+		.radius{
+			background: red;
+			margin: 30px auto;
+			width: 300px;
+			height: 100px;
+			border-radius: 10px 30px 50px 0;
+		}
+	</style>
+
+	<span class="triangle"></span>
+
+	<style>
+		.triangle{
+			margin: 30px 100px;
+			border-bottom: 50px solid black;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			display: inline-block;
+		}
+	</style>
+
+	<span class="angled-triangle"></span>
+
+	<style>
+		.angled-triangle{
+			display: inline-block;
+			margin: 30px 100px;
+			border-bottom: 50px solid #000;
+			border-right: 50px solid transparent;
+		}
+	</style>
+
+	<div class="product">
+		<span class="price">
+			<span>USD 120</span>
+		</span>
+		<img src="mera-peak.jpg" width="100%">
+	</div>
+
+	<style>
+		.product{
+			width: 30%;
+			margin: 30px auto;
+			box-shadow: 0 0 5px #999;
+			padding: 10px;
+			position: relative;
+		}
+		.price{
+			position: absolute;
+			top: -15px;
+			left: -5px;
+			background: #333;
+			color: #fff;
+			padding: 10px 30px;
+			border-top-left-radius: 10px;
+		}
+		.price:before{
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			width: 5px;
+			height: 3px;
+			border-bottom-left-radius: 10px;
+			background: #333;
+			opacity: 0.7;
+		}
+		.price:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: -23px;
+			border-left: 25px solid #333;
+			border-bottom: 25px solid transparent;
+		}
+		.price span:before{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: -23px;
+			border-left: 25px solid #333;
+			border-top: 25px solid transparent;
+		}
+	</style>
+
+	<h1>CSS SELECTORS & COMBINATORS</h1>
+
+	<div class="test">
+		<!-- space selector -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p> 
+		<p>Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. </p>
+		<p>Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<div class="new-test">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<style>
+		.test{
+			padding: 30px 100px;
+		}
+		.test p{
+			color: red;
+			margin-bottom: 10px;
+			line-height: 1.4em;
+		}
+	</style>
+
+	<div class="retest">
+		<!-- > selector => immediate children -->
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.</p> 
+		<p>Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. </p>
+		<p>Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<div class="new-retest">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<style>
+		.retest{
+			padding: 30px 100px;
+		}
+		.retest > p{
+			color: green;
+			margin-bottom: 10px;
+			line-height: 1.4em;
+		}
+	</style>
+
+	<h2>Combinators</h2>
+
+	<style>
+		h1,h2{
+			text-align: center;
+			text-transform: uppercase;
+			margin: 50px 0;
+			font-size: 32px;
+		}
+	</style>
+
+	<div class="plus">
+		<!-- + selects preceeding single element -->
+		<p class="plus-child">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<style>
+		.plus{
+			padding: 30px 100px;
+		}
+		.plus-child + p{
+			color: orange;
+		}
+	</style>
+
+	<div class="tilde">
+		<!-- ~ selects preceeding all elements -->
+		<p class="tilde-child">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<style>
+		.tilde{
+			padding: 30px 100px;
+		}
+		.tilde-child ~ p{
+			color: orange;
+		}
+	</style>
+
+	<h2>PSEUDO ELEMENTS</h2>
+
+	<div class="pseudo">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<style>
+		.pseudo p{
+			line-height: 1.4em;
+			margin-bottom: 10px;
+			letter-spacing: 2px;
+		}
+		.pseudo p:first-child{
+			color: purple;
+		}
+		.pseudo p:last-child{
+			color: purple;
+		}
+		.pseudo p:nth-child(4){
+			color: tomato;
+		}
+	</style>
+
+	<h1>ATTRIBUTE SELECTOR</h1>
+
+	<style>
+		div[class="new-retest"]{
+			background: yellow;
+		}
+	</style>
+
+	<h1>VARIABLES</h1>
+
+	<style>
+		:root {
+		  --theme-background: linear-gradient(#066,#d7d7d7); 
+		  --theme-color: #222;
+		  --theme-font-size: 16px;
+		  --theme-margin: 15px;
+		  --theme-padding: 15px;
+		}
+	</style>
+
+	<style>
+		.pseudo{
+			background: var(--theme-background);
+		}
+	</style>
+
+
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+.header{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.top-contact{
+	border-left: 1px solid #d7d7d7;
+}
+.top-contact a{
+	font-size: 20px;
+	color: #343a40;
+	text-decoration: none;
+}
+.top-contact .viber{
+	color: #59267c;
+}
+.top-contact .whatsapp{
+	color: #075e54;
+}
+.red{
+	color: #f00;
+}
+.top-contact small{
+	color: grey;
+}
+nav{
+	background: #00468c;
+}
+.nav .nav-link{
+	padding: 12px 15px;
+	color: #fff;
+	font-weight: bold;
+}
+.banner{
+	background: url(images/banner.png) no-repeat center;
+	background-size: cover;
+	min-height: 85vh;
+	position: relative;
+}
+.banner:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+}
+.motto{
+	position: absolute;
+	width: 50%;
+	text-align: center;
+	left: 25%;
+	top: 40%;
+	color: #fff;
+	z-index: 2;
+}
+.motto .form-control-lg{
+	width: 50%;
+	margin: 10px auto;
+}
+.motto .btn{
+	border-radius: 30px;
+	width: 30%;
+}
+.icon{
+	border: 1px solid #d7d7d7;
+	text-align: center;
+	padding: 20px;
+	border-radius: 10px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.specialities,.packages{
+	margin: 30px auto;
+}
+.section-title{
+	text-align: center;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.icon i{
+	font-size: 50px;
+	background: #f7f7f7;
+	border-radius: 50%;
+	padding: 15px 25px;
+	margin-bottom: 10px;
+}
+.icon a{
+	color: #343a40;
+	text-decoration:none;
+}
+.icon:hover{
+	background: #afdcf0;
+}
+.package-details{
+	border: 1px solid #333;
+	padding: 15px;
+}
+.package-img{
+	position: relative;
+	overflow: hidden;
+}
+.featured{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background: #eda921;
+	border-top-left-radius: 20px;
+	padding: 10px 50px;
+	color: #fff;
+}
+.package-img img{
+	transition: 0.5s;
+	filter: brightness(0.7);
+}
+.package:hover img{
+	transform: scale(1.5);
+	filter: brightness(1);
+}
+.package a{
+	color: #343a40;
+	text-decoration: none;
+}
+.package a:hover{
+	color: #eda921;
+}
+.package .fa-star{
+	color: #eda921;
+}
+.cost{
+	font-size: 18px;
+	font-weight: bold;
+}

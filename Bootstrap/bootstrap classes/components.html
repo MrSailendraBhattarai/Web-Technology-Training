@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BOOTSTRAP Components</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script src="bootstrap.bundle.min.js"></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#top-nav">
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary mb-3 sticky-top top-0 start-0 w-100" id="top-nav">
+  <div class="container">
+    <a class="navbar-brand" href="#">Website Logo</a>
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="mainMenu"> -->
+    	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home" data-bs-title="Home" data-bs-toggle="tooltip" data-bs-placement="bottom">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#link">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#register" class="nav-link">Register</a></li>
+  		<li class="nav-item"><a href="#login" class="nav-link">Log In</a></li>
+  		<li class="nav-item"><a href="#test1" class="nav-link">Test 1</a></li>
+  		<li class="nav-item"><a href="#test2" class="nav-link">Test 2</a></li>
+      </ul>
+<!--       <ul class="navbar-nav ms-auto">
+      		<li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+      		<li class="nav-item"><a href="#" class="nav-link">Log In</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+
+	<div class="container">
+		<ol class="w-25">
+			<li>Alerts</li>
+			<li>Collapse</li>
+			<li>Accordion</li>
+			<li>Carousel</li>
+			<li>Modal</li>
+			<li>Navbar</li>
+			<li>Dropdowns</li>
+			<li>Offcanvas</li>
+			<li>Scrollspy</li>
+			<li>Navs & tabs</li>
+			<li>Toasts</li>
+			<li data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right" data-bs-title="Popovers" data-bs-content="Popovers can be used with bootstrap js but you'll need to add a bit of script in your webpage for them to be activated.">Popovers</li>
+			<li>Tooltips</li>
+		</ol>
+
+		<div id="home">
+		<h1>user action / effect</h1>
+
+		<div class="alert alert-success alert-dismissable">
+			<button class="btn-close float-end" data-bs-dismiss="alert"></button>
+			<strong>Success !</strong> Your message has been succeessfully sent.
+		</div>
+
+		<div class="alert alert-danger alert-dismissable">
+			<button class="btn-close float-end" data-bs-dismiss="alert"></button>
+			<strong>Error !</strong> Your message colud not be sent.
+		</div>
+
+		<div class="my-3">
+			<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse-test">Collapse Content</button>
+		</div>
+		<div class="collapse-test collapse show" id="collapse-test">
+			<h1>Collapse Test</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<h2>Accordion / Multiple Collapse</h2>
+
+		<div class="accordion" id="accordion">
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+						Collapse 1
+					</button>
+				</h2>
+				<div class="accordion-collapse collapse show" id="collapse1" data-bs-parent="#accordion">
+					<div class="accordion-body">
+						<h3>Collapse 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header">
+					<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+						Collapse 2
+					</button>
+				</h2>
+				<div class="accordion-collapse collapse" id="collapse2" data-bs-parent="#accordion">
+				<div class="accordion-body">
+					<h3>Collapse 2</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<h1>Bootstrap Carousel</h1>	
+	</div>
+</div>
+
+<style>
+	.slider img{
+		height: 500px;
+		object-fit: cover;
+	}
+</style>
+
+
+	<section class="my-5 slider" id="link">
+		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+		    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		    <div class="carousel-item active" data-bs-interval="5000">
+		      <img src="Manaslu-Expedition1.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>First slide label</h5>
+		        <p>Some representative placeholder content for the first slide.</p>
+		      </div>
+		    </div>
+		    <div class="carousel-item" data-bs-interval="5000">
+		      <img src="MERA-PEAK.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>Second slide label</h5>
+		        <p>Some representative placeholder content for the first slide.</p>
+		      </div>
+		    </div>
+		    <div class="carousel-item" data-bs-interval="5000">
+		      <img src="-6165594547942436950_121.jpg" class="d-block w-100" alt="...">
+		      <div class="carousel-caption d-none d-md-block">
+		        <h5>Third slide label</h5>
+		        <p>Some representative placeholder content for the first slide.</p>
+		      </div>
+		    </div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>
+	</section>
+
+	<div class="container">
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Launch modal</button>
+
+		<div class="my-5">
+			<h1>Hello World!</h1>
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+
+	<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Manaslu-Expedition1.jpg" class="w-100 d-block">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+  		<li class="nav-item"><a href="#" class="nav-link">Log In</a></li>
+  		<li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+  		<li class="nav-item"><a href="#" class="nav-link">Log In</a></li>
+      </ul>
+  </div>
+</div>
+
+<div class="container" id="register">
+		<div class="my-5">
+			<h1>Register</h1>
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<div class="container" id="login">
+		<div class="my-5">
+			<h1>log in</h1>
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+	<div class="container" id="test1">
+		<div class="my-5">
+			<h1>test 1</h1>
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+
+
+	<div class="container" id="test2">
+		<div class="my-5">
+			<h1>test 2</h1>
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p class="py-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</div>
+<style>
+	.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+		background: #222;
+		color: #fff;
+		border-radius: 10px;
+	}
+</style>
+
+<div class="fixed-bottom end-0">
+	<div class="toast show ms-auto">
+	  <div class="toast-header">
+	    <strong class="me-auto">Bootstrap</strong>
+	    <small>11 mins ago</small>
+	    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+	  </div>
+	  <div class="toast-body">
+	    Hello, world! This is a toast message.
+	  </div>
+	</div>
+	<div class="toast show ms-auto">
+	  <div class="toast-header">
+	    <strong class="me-auto">Bootstrap</strong>
+	    <small>11 mins ago</small>
+	    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+	  </div>
+	  <div class="toast-body">
+	    Hello, world! This is a toast message.
+	  </div>
+	</div>
+</div>
+
+<script>
+	// tooltip
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+// popover
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+
+<!-- image slider / image pop up / image zoom / form validation / basic javascript -->
+
+</body>
+</html>
